@@ -1,0 +1,41 @@
+hHv1 dimerization study — MD random seeds
+
+
+
+[Aqueous comparison — three independent trajectories per model]
+
+S1–S1′
+  Replica 1  seed = <199660>  
+  Replica 2  seed = <568070>  
+  Replica 3  seed = <546426>  
+
+S1–S4′
+  Replica 1  seed = <421015>
+  Replica 2  seed = <203148>
+  Replica 3  seed = <235396>
+
+S4–S4′
+  Replica 1  seed = <816922>
+  Replica 2  seed = <207655>
+  Replica 3  seed = <432987>
+
+S2–S3′ Structure 1
+  Replica 1  seed = <625741>
+  Replica 2  seed = <172774>
+  Replica 3  seed = <628095>
+
+S2–S3′ Structure 2
+  Replica 1  seed = <777709>
+  Replica 2  seed = <691301>
+  Replica 3  seed = <209567>
+
+[Additional aqueous S1–S1′ trajectories for β-VAE]
+  Additional run 1  seed = <381565>  β-VAE label = <T4>
+  Additional run 2  seed = <501291>  β-VAE label = <T5>
+  Additional run 3  seed = <374689>  β-VAE label = <T6>
+  Additional run 4  seed = <52521>  β-VAE label = <T7>
+  Additional run 5  seed = <74902>  β-VAE label = <T8>
+  Additional run 6  seed = <624987>  β-VAE label = <T9>
+
+[β-VAE model training]
+  Random seeds: 11, 29, 47, 71, 101
