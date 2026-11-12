@@ -5,10 +5,7 @@ Workflow (three stages)
   2. analyze : beta-VAE training (5 seeds x 3 betas), LDA, voting, gradient attribution, CSV tables, figures
   3. plot    : redraw Figure 4 / S2 / S3 from existing CSVs
 
-Settings marked [manuscript] are specified in the revised manuscript.
-The README records the implementation defaults for choices the manuscript
-leaves open. Exact numerical reproduction requires the original run records.
-"""
+
 
 import argparse
 import csv
