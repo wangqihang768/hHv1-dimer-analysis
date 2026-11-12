@@ -1,8 +1,17 @@
-This repository provides input files and analysis scripts for our computational study of human Hv1 (hHv1) dimerization.
+# hHv1 Dimerization: Simulation Inputs & Analysis Pipeline
 
-- Initial PDB structures and corresponding AMBER topology files (`.top`) for the five candidate dimer models.
-- Recorded MD random seeds and trajectory identifiers in [md_seeds.txt](md_seeds.txt).
-- Scripts for MM/GBSA, normal-mode (NMODE) entropy calculations, and β-VAE analysis.
- It also records the six additional aqueous S1–S1′ trajectories.  The β-VAE training seeds were 11, 29, 47, 71, and 101.
+This repository hosts the simulation input files, structural models, and analysis scripts supporting our computational investigation of human Hv1 (hHv1) dimerization.
 
-The original MD trajectories and extracted analysis frames are omitted because of their size. To rerun the simulations, use the supplied structures and topology files, the recorded seeds, and the MD protocol described in the manuscript. Before running the analysis scripts, select frames from the resulting trajectories using the sampling procedure reported in the manuscript.
+## Repository Contents
+* **Initial Models & Topologies:** Starting PDB structures and corresponding AMBER topology files (`.top`) for the five candidate hHv1 dimer configurations.
+* **MD Seeds & Trajectory Logs:** Recorded molecular dynamics random seeds and trajectory identifiers in `md_seeds.txt`, which also documents the six additional aqueous S1–S1′ validation trajectories.
+* **Free Energy & Machine Learning Scripts:** Scripts for MM/GBSA calculations, normal-mode (`NMODE`) vibrational entropy estimation, and $\beta$-VAE latent space modeling (using training seeds `11`, `29`, `47`, `71`, and `101`).
+
+## Trajectory Frames & Planned Updates
+Due to file size limitations, full-length raw MD trajectories are not hosted directly in this repository. To facilitate reproducibility and downstream validation, **this repository is under active maintenance and will be continuously updated with:**
+1. **Conformational Ensembles:** Extracted analysis frames and key representative conformations along the dimerization pathways.
+2. **Membrane-Protein Systems:** Equilibrated lipid bilayer–embedded hHv1 coordinates and associated system build files.
+3. **Extended Analysis Suite:** Additional scripts for structural characterization, inter-helical contact mapping, and trajectory post-processing.
+
+## Usage Notes
+To rerun the simulations independently, pair the provided structures and `.top` files with the random seeds in `md_seeds.txt` following the simulation protocol reported in the manuscript. Prior to executing the analysis scripts, sample the trajectory frames according to the intervals and criteria specified in the Methods section of the manuscript.
