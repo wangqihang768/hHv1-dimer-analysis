@@ -6,9 +6,6 @@ Sub-commands
   summarize  mean +/- sample SD across replicas (Table 1 / S6 / S7); optional Welch t-test between two models
   blocks     block-wise Delta-H over consecutive sub-windows of the 400-500 ns samples (Table S3)
 
-All run-time choices (GB model, gamma, probe radius, NMODE settings, frame selection ...) are
-set in the per-replica JSON file; see aqueous.example.json and bilayer.example.json. The values that the
-manuscript fixes are collected in the block "USER-ADJUSTABLE PARAMETERS" below.
 """
 
 import argparse
